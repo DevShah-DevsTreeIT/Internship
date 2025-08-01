@@ -1,0 +1,26 @@
+//
+day 1(31-07-2025)
+
+https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment
+to install virtual env
+
+
+#& : File C:\Users\Internship\Desktop\Internship\py\venv\Scripts\Activate.ps1 cannot be loaded because running scripts is   
+disabled on this system. For more information, see about_Execution_Policies at 
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:3
++ & C:\Users\Internship\Desktop\Internship\py\venv\Scripts\Activate.ps1
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+
+to solve : "Get-ExecutionPolicy" then "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force"
+
+//
+
+CAPITALIZE() -> it is used to capitalize the first letter of the given word/sentence
+
+//
+
+
