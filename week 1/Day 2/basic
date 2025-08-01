@@ -1,1 +1,6 @@
 Basic text file for day 2 task(Git Task 2 )
+
+this are git commands to push the the newly added files or if you have moved any files then you can use this commands to get the update in your git
+git add
+git commit -m "first commit"
+git push -u origin main
