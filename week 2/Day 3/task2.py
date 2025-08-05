@@ -30,16 +30,16 @@ def Gender():
 def Age(age,gender):
 
     if age<= 12:
-        print("Hey Kiddo ")
+        print(f"Hey Kiddo you are a {age} Years old {gender}")
     elif age> 12 and age<= 18:
-        print("Heyyy Teenager ")
+        print(f"Heyyy Teenager you are a {age} Years old {gender}")
     elif age> 18 and age<= 60:
-        print("Welcome to the Adulthood ")
+        print(f"Welcome to the Adulthood you are a {age} Years old {gender} ")
     elif age> 60 and age<= 100:
         if gender ==  "Male":
-            print("Jay Shree Krishna Dada")
+            print(f"Jay Shree Krishna Dada you are a {age} Years old {gender}")
         else:
-            print("Jay Shree Krishna Dadi")
+            print("Jay Shree Krishna Dadi you are a {age} Years old {gender}")
     else:
         print("Please enter a valid age")
     
@@ -56,7 +56,7 @@ def main():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-    print(f"\n{name}, you're a {age}-year-old {gender}.")
+    # print(f"\nHello {name}, you're a {age}-year-old {gender}.")
     Age(age, gender)
     # age = input("Hey, please enter your age: ")
     # Age(age,gender)
