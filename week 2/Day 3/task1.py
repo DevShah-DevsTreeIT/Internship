@@ -1,3 +1,5 @@
+# Graade Calculator
+
 Grades = []
 num_sub = 4
 for i in range(num_sub):
