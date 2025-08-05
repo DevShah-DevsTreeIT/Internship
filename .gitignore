@@ -1,4 +1,5 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
 .vscode
-venv
-Py notes.txt
-#  *.txt // to ignore all the text files 
+myenv
+Py notes
+requirements

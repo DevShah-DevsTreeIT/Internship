@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LIST 
 # List items are ordered, changeable, and allow duplicate values.
 
@@ -244,3 +245,7 @@ print(tuple4)
 
 
 
+=======
+mylist = ["banna","apple","kiwi"]
+print(len(mylist))
+>>>>>>> main
