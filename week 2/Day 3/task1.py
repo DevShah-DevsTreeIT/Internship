@@ -13,11 +13,11 @@ print("Your marks:",Grades)
 
 if total_grades >= 90:
     print("A - distinction")
-elif total_grades >= 90:
-    print("B - ")
-elif total_grades >= 90:
-    print("C - ")
-elif total_grades >= 90:
-    print("D - ")
+elif total_grades >= 80:
+    print("B - Grade")
+elif total_grades >= 70:
+    print("C Grade ")
+elif total_grades >= 50:
+    print("D Grade ")
 else:
     print("F-Fail")
