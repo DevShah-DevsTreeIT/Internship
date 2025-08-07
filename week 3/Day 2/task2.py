@@ -1,3 +1,5 @@
+# Decorator practice
+
 import time
 import functools
 
