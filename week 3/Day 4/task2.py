@@ -19,7 +19,7 @@ class Circle(Shape):
     def area(self):
         print("\n--- Area of Circle ---")
         aoc = math.pi * self.radius ** 2
-        print(f"The area of the circle with radius {self.radius} is: {aoc:.2f} cm²")
+        print(f"The area of the circle with radius {self.radius} is: {aoc:.2f} ")
 
 # Triangle subclass
 class Triangle(Shape):
@@ -30,7 +30,7 @@ class Triangle(Shape):
     def area(self):
         print("\n--- Area of Triangle ---")
         aot = 0.5 * self.base * self.height
-        print(f"The area of the triangle with base {self.base} and height {self.height} is: {aot:.2f} cm²")
+        print(f"The area of the triangle with base {self.base} and height {self.height} is: {aot:.2f} ")
 
 # Rectangle subclass
 class Rectangle(Shape):
@@ -41,7 +41,7 @@ class Rectangle(Shape):
     def area(self):
         print("\n--- Area of Rectangle ---")
         aor = self.width * self.length
-        print(f"The area of the rectangle with width {self.width} and length {self.length} is: {aor:.2f} cm²")
+        print(f"The area of the rectangle with width {self.width} and length {self.length} is: {aor:.2f}")
 
 # Main program
 def main():
