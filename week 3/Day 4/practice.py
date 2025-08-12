@@ -171,3 +171,47 @@ class Bill(Hotel):
 obj = Bill()
 obj.get_inputs()          # Inherited from Hotel
 obj.calculate_total()     # From Bill
+
+
+
+
+
+
+
+###################
+# class Book:
+#     def __init__(self,title = "My Personal Diary",author = "Aayushi Saini",year = 2026 ):
+#         self.title = title
+#         self.author = author
+#         self.year = year
+        
+
+
+#     def get_info(self):
+#         print(f"Title: {self.title}")
+#         print(f"Author: {self.author}")
+#         print(f"Year: {self.year}")
+
+
+# obj1 = Book()
+# obj1.get_info()
+
+# #################
+# class Student:
+#     def __init__(self,name,age,marks):
+#         self.name = name
+#         self.age = age
+#         self.marks = marks
+    
+#     def is_passed(self):
+#         return self.marks >= 40
+#             # print("Pass") #this is a comment
+
+# obj1 = Student(name = "Joy",marks= 45,age =54)
+# # print(obj1.is_passed())
+
+# #for Printing the result
+# if obj1.is_passed():
+#     print(f"{obj1.name} you are pass ")
+# else:
+#     print(f"{obj1.name} You are fail")
