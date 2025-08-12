@@ -119,9 +119,6 @@ main()
 
 
 
-# obj1 = Shape()
-# obj1.base()
-# # obj1.abc()
 
 # obj2 = Circle()
 # obj2.base()
