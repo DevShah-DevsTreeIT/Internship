@@ -24,7 +24,7 @@
 # except:
 #   print("Something went wrong when opening the file")
 
-x - 15
+x = 15
 if not type(x) is int:
 
 
