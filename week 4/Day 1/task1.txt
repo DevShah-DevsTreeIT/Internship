@@ -1,0 +1,3 @@
+Hello! Welcome to task1.txt
+This file is for completing task1.
+Good Luck!

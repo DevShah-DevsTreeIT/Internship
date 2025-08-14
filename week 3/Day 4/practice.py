@@ -2,7 +2,7 @@
 # # There are 5 different types of inheritance in Python. They are:
 
 # # Single Inheritance: a child class inherits from only one parent class.
-# # Multiple Inheritance: a child class inherits from multiple parent classes.
+# # MulGSTle Inheritance: a child class inherits from mulGSTle parent classes.
 # # Multilevel Inheritance: a child class inherits from its parent class, which is inheriting from its parent class.
 # # Hierarchical Inheritance: more than one child class are created from a single parent class.
 # # Hybrid Inheritance: combines more than one form of inheritance.
@@ -122,9 +122,9 @@
 
 
 # Enter bill amount: 500
-# Enter tip percentage (like 15): 10
+# Enter GST percentage (like 15): 10
 
-# Tip amount: ₹50.00
+# GST amount: ₹50.00
 # Total bill: ₹550.00
 
 # Would you like to split the bill? (yes/no): yes
@@ -135,42 +135,129 @@
 class Hotel:
     def __init__(self):
         self.amount = 0
-        self.tip_percentage = 0
-        self.tip_amount = 0
-
+        self.GST_percentage = 5
+        self.GST_amount = 0
+        self.total = 0
+        self.stotal = 0
+        self.deduction = 0 
     def get_inputs(self):
         self.amount = float(input("Enter the bill amount: ₹"))
-        self.tip_percentage = float(input("Enter the tip percentage (%): "))
-        self.tip_amount = (self.tip_percentage / 100) * self.amount
+        # self.GST_percentage = float(input("Enter the GST percentage (%): ")) ##GST##
+        self.GST_amount = (self.GST_percentage / 100) * self.amount  ##GST##
+
+    def calculate_total(self):
+        self.total = self.amount + self.GST_amount
+        print(f"\n--- Bill Summary ---")
+        print(f"Bill Amount: ₹{self.amount}")
+        print(f"GST ({self.GST_percentage}%): ₹{self.GST_amount:.2f}") ##GST##
+        print(f"Total Amount to Pay: ₹{self.total:.2f}")
+        self.stotal = self.total
+    # def total(self):
 
 
 class Bill(Hotel):
-    def calculate_total(self):
-        total = self.amount + self.tip_amount
-        print(f"\n--- Bill Summary ---")
-        print(f"Bill Amount: ₹{self.amount}")
-        print(f"Tip ({self.tip_percentage}%): ₹{self.tip_amount:.2f}")
-        print(f"Total Amount to Pay: ₹{total:.2f}")
-        def split(self):
-            while True:
-                choice = str(input("Would you like to split the bill:- Y or N: ")).lower()
-                if choice == 'y':
+
+        
+    def split(self):
+        while True:
+            choice = str(input("Would you like to split the bill:- Y or N: ")).lower()
+            if choice == 'y':
                     people = int(input("How many people?"))
-                    self.total = total / people
-                    print(f"Each person has to pay: {self.total}")
-                    break
-                elif choice == 'n': 
-                    print("Thanks for visiting our hotel :) ")
-                    break
-                else:
-                    print("Please enter a valid option")
-        split(self)
+                    print(f"Okay, so you are a total of {people} peoples in group.")
+                    print("Avaliable options for you guys are: ")
+                # while True:
+                    print(f"1.Split the bill in {people} parts?")
+                    print("2.Wants to pay customized amount per person.")
+                    # option = ()
+                    option = int(input("Enter youce choice: "))
+                    if option == 1:
+                        self.total = self.total / people
+                        print(f"Each person has to pay: {self.total}")
+                        break
+                    elif option == 2:
+                        for i in range(people):
+                            amt = []
+                            # print(f"please enter the amount for",i)
+                            amt = int(input(f"Please Enter the amount for person no. {i}: "))
+                            self.deduction = (amt / 100) * self.total
+                            self.stotal -= self.deduction
+                            # print(f"Amount yet left to pay: {self.total}")
+                            if self.stotal == 0:
+                                print("Thanks for visiting.")
+                                break
+                            # elif self.stotal > 0:
+                                # if people[i] :
+                        print(f"Remaining amount : {self.stotal}")
+                            # elif i<=people:
+                            # print(i)
+                        break
+                    else:
+                        print("Please enter a valid option")
+                    # break
+            elif choice == 'n': 
+                print("Thanks for visiting our hotel :) ")
+                break
+            else:
+                print("Please enter a valid option")
+        
 
 
 # Create object of the child class
 obj = Bill()
 obj.get_inputs()          # Inherited from Hotel
-obj.calculate_total()     # From Bill
+obj.calculate_total()     # Inherited from Hotel
+# obj.total()
+obj.split() #From Bill
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################### Basic - beginning one 
+
+
+# def split(self):
+#             while True:
+#                 choice = str(input("Would you like to split the bill:- Y or N: ")).lower()
+#                 if choice == 'y':
+                
+#                     people = int(input("How many people?"))
+#                     print(f"Okay, so you are a total of {people} peoples in group.")
+#                     print("Avaliable options for you guys are: ")
+#                     print(f"1.Split the bill in {people} parts?")
+#                     print("2.Wants to pay customized amount per person.")
+
+#                     option = int(input("Enter youce choice"))
+#                     if option == 1:
+#                         self.total = self.total / people
+#                         print(f"Each person has to pay: {self.total}")
+#                     elif option == 2:
+#                         print("")
+#                     break
+                
+                
+#                 elif choice == 'n': 
+#                     print("Thanks for visiting our hotel :) ")
+#                     break
+#                 else:
+#                     print("Please enter a valid option")
+#         split(self)
+
+########################################
+
+
+
+
+
 
 
 

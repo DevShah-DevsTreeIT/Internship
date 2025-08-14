@@ -1,0 +1,13 @@
+Log Summary Report
+------------------
+Total lines      : 7
+Error count      : 3
+Error breakdown  :
+  Failed: 1 time(s)
+  Timeout: 1 time(s)
+  Disk: 1 time(s)
+
+Error Messages:
+- ERROR 2025-08-14 10:01:05 - Failed to connect to database
+- ERROR 2025-08-14 10:02:00 - Timeout while connecting to service
+- ERROR 2025-08-14 10:04:00 - Disk read failure

@@ -1,0 +1,7 @@
+INFO 2025-08-14 10:00:00 - System started
+ERROR 2025-08-14 10:01:05 - Failed to connect to database
+WARNING 2025-08-14 10:01:30 - Low memory
+ERROR 2025-08-14 10:02:00 - Timeout while connecting to service
+INFO 2025-08-14 10:03:00 - Retry successful
+ERROR 2025-08-14 10:04:00 - Disk read failure
+INFO 2025-08-14 10:05:00 - System running normally
