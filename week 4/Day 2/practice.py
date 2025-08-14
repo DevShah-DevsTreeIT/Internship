@@ -16,7 +16,7 @@
 # try:
 #   f = open("demofile.txt","w")
 #   try:
-#     f.write("Lorum Ipsum")
+#     f.write("Jay kant sikhre")
 #   except:
 #     print("Something went wrong when writing to the file")
 #   finally:
