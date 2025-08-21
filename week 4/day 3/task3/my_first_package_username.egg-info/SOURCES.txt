@@ -1,0 +1,8 @@
+README.md
+setup.py
+my_first_package_username.egg-info/PKG-INFO
+my_first_package_username.egg-info/SOURCES.txt
+my_first_package_username.egg-info/dependency_links.txt
+my_first_package_username.egg-info/top_level.txt
+task3/__init__.py
+task3/greet.py
