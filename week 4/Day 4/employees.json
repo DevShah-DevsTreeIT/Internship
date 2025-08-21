@@ -1,0 +1,47 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Dev",
+      "department": "python Intern",
+      "skills": ["Python", "C++","HTML","CSS"],
+      "details": {
+        "age": 22,
+        "full_time": true
+      }
+    },
+    
+    {
+      "id": 2,
+      "name": "Jay",
+      "department": "python Intern",
+      "skills": ["Python", "C++","HTML","CSS"],
+      "details": {
+        "age": 20,
+        "full_time": true
+      }
+    },    
+    
+    {
+      "id": 3,
+      "name": "Devarsh",
+      "department": "python Intern",
+      "skills": ["Python", "C++","HTML","CSS"],
+      "details": {
+        "age": 21,
+        "full_time": true
+      }
+    },
+
+    {
+      "id": 4,
+      "name": "Talha",
+      "department": "python Intern",
+      "skills": ["Python", "C++","HTML","CSS"],
+      "details": {
+        "age": 21,
+        "full_time": true
+      }
+    }
+]
+}
